@@ -10,3 +10,19 @@ uc4=$(( c + a / c ))
 echo $uc4
 uc5=$(( a % b + c ))
 echo $uc5
+#create dict
+declare -A comp
+comp[uc2]=$uc2
+comp[uc3]=$uc3
+comp[uc4]=$uc4
+comp[uc5]=$uc5
+echo ${#comp[@]}
+
+echo ${!comp[@]}
+
+for key in ${!comp[@]}
+do
+        echo $key=${comp[$key]}
+done
+
+
