@@ -24,8 +24,9 @@ done
 # print values to array
 for value in ${comp[@]}
 do
-	$value=${comp[$value]}
+	echo $value=${comp[$value]}
 done
-
+#sort the  desending order
+sort -nr <(printf "%s\n" "${comp[@]}")
 
 
