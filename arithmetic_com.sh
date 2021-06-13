@@ -28,5 +28,7 @@ do
 done
 #sort the  desending order
 sort -nr <(printf "%s\n" "${comp[@]}")
+#assending order
+sort -n <(printf "%s\n" "${comp[@]}")
 
 
