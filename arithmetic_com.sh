@@ -16,13 +16,16 @@ comp[uc2]=$uc2
 comp[uc3]=$uc3
 comp[uc4]=$uc4
 comp[uc5]=$uc5
-echo ${#comp[@]}
-
-echo ${!comp[@]}
-
+#print key values
 for key in ${!comp[@]}
 do
         echo $key=${comp[$key]}
 done
+# print values to array
+for value in ${comp[@]}
+do
+	$value=${comp[$value]}
+done
+
 
 
